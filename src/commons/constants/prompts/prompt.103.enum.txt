@@ -1,0 +1,65 @@
+@01-common.mdc 파일의 커서룰을 준수하여 아래 요구사항을 구현
+
+파일 경로: src/commons/constants/enum.ts
+
+==============================================
+구현 요구사항
+==============================================
+
+1. AccessLevel enum 정의
+   - PUBLIC: 누구나 접근 가능
+   - MEMBER_ONLY: 로그인한 회원만 접근 가능
+   - OWNER_ONLY: 본인만 접근 가능
+
+2. LayoutConfig, PageMeta 인터페이스 정의
+   - LayoutConfig: header(visible, logo, darkModeToggle), banner, footer
+   - PageMeta: accessLevel, layout
+
+3. ROUTES 객체 정의 (as const 적용)
+   - AUTH: LOGIN, SIGNUP
+   - BOARDS: LIST, DETAIL(id), NEW
+   - STAYS: LIST, DETAIL(id), NEW
+   - MYPAGE
+   * 동적 라우팅은 함수 형태: (id: string) => \`/board/\${id}\`
+
+4. PAGE_META 객체 정의 (as const 적용)
+   - 아래 표의 모든 페이지에 대한 메타데이터 정의
+
+==============================================
+페이지별 상세 스펙
+==============================================
+
+| 페이지명 | 경로 | 접근권한 | Header | Logo | DarkToggle | Banner | Footer |
+|---------|------|----------|--------|------|------------|--------|--------|
+| 로그인 | /auth/login | PUBLIC | false | false | false | false | false |
+| 회원가입 | /auth/signup | PUBLIC | false | false | false | false | false |
+| 트립토크 목록 | /boards | PUBLIC | true | true | false | true | true |
+| 트립토크 상세 | /board/[id] | MEMBER_ONLY | true | true | false | false | true |
+| 트립토크 등록 | /board/new | MEMBER_ONLY | true | true | false | false | true |
+| 숙박권 메인 | /stays | PUBLIC | true | true | false | true | true |
+| 숙박권 상세 | /stays/[id] | PUBLIC | true | true | false | false | true |
+| 숙박권 등록 | /stays/new | PUBLIC | true | true | false | false | true |
+| 마이페이지 | /mypage | OWNER_ONLY | true | true | false | false | true |
+
+==============================================
+주의사항
+==============================================
+
+1. 동적 라우팅 경로는 함수로 구현:
+   - DETAIL: (id: string) => \`/board/\${id}\`
+   
+2. PAGE_META의 키는 문자열 경로 사용:
+   - 정적 경로: ROUTES.AUTH.LOGIN
+   - 동적 경로: '/board/:id' 형식으로 패턴 등록
+
+3. JSDoc 주석 추가:
+   - 각 enum, interface, 주요 객체에 설명 추가
+
+4. 타입 안정성:
+   - as const 적용
+   - Record<string, PageMeta> 타입 명시
+
+5. export 키워드:
+   - AccessLevel, ROUTES, PAGE_META 모두 export
+
+작업 완료 후 적용된 커서룰을 체크리스트로 반환

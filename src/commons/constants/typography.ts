@@ -522,7 +522,7 @@ export const generateTypographyCSSVars = (): Record<string, string> => {
 };
 
 // 기본 내보내기
-export default {
+const typographyTokens = {
   FONT_FAMILIES,
   FONT_WEIGHTS,
   FONT_SIZES,
@@ -535,3 +535,5 @@ export default {
   getTypographyCSSVar,
   generateTypographyCSSVars,
 };
+
+export default typographyTokens;
