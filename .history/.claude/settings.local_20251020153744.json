@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mcp__CursorTalkToFigmaMCP__send_message p8dgippn \"Please provide all color token information from Figma node 9089:22363\")",
+      "Bash(env)",
+      "Bash(npx tsc --noEmit --skipLibCheck src/commons/constants/color.ts)",
+      "Bash(mcp__CursorTalkToFigmaMCP__send_message p8dgippn \"Please provide all typography information from Figma node 9089:25440\")",
+      "Read(//Users/chorong/.cursor/**)",
+      "Bash(mcp__CursorTalkToFigmaMCP__send_message 5l1vfw55 \"Hello, I''m connecting to this Figma channel\")",
+      "Read(//Users/chorong/.config/**)",
+      "Bash(npm install -g @cursorrules/talk-to-figma-mcp)",
+      "Bash(npx @cursorrules/talk-to-figma-mcp --version)",
+      "Bash(npm search talk-to-figma)",
+      "Bash(npm install -g cursor-talk-to-figma-mcp)",
+      "Bash(npm root -g)",
+      "Bash(mcp__cursor-talk-to-figma__send_message 5l1vfw55 \"Hello, I''m connecting to this Figma channel\")",
+      "Bash(cursor-talk-to-figma-mcp --help)",
+      "Bash(cursor-talk-to-figma-mcp)",
+      "Bash(cursor-talk-to-figma-mcp send 5l1vfw55 \"Hello, I''m connecting to this Figma channel\")",
+      "Read(//Users/chorong/Library/**)",
+      "Bash(ls -la \"$HOME/Library/Application Support/\")",
+      "Bash(find \"$HOME/Library\" -name \"*mcp*\" -o -name \"claude_desktop_config.json\")",
+      "Bash(find \"$HOME/.config\" -name \"*mcp*\" -o -name \"claude*\")",
+      "Read(//Users/chorong/**)",
+      "Bash(/Users/chorong/.bun/bin/bunx --version)",
+      "Bash(/Users/chorong/.bun/bin/bunx cursor-talk-to-figma-mcp@latest --help)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(touch:*)",
+      "Bash(npm run test:e2e:*)",
+      "Bash(mkdir:*)",
+      "mcp__figma__get_screenshot",
+      "mcp__figma__get_design_context",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git log:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run storybook:*)",
+      "Read(//Users/chorong/Desktop/아이콘/**)",
+      "Bash(npm test:*)",
+      "Bash(cat:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(npx playwright test:*)",
+      "Read(//Users/chorong/**)",
+      "Bash(env)",
+      "Bash(claude mcp list)",
+      "mcp__TalkToFigma__join_channel",
+      "mcp__TalkToFigma__get_node_info"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -5,20 +5,10 @@
 /* Typography 토큰 CSS 변수 */
 :root {
   /* 폰트 패밀리 */
-  --font-family-korean-primary: 'Pretendard', -apple-system, BlinkMacSystemFont,
-    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
-    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', sans-serif;
-  --font-family-korean-variable: 'Pretendard Variable', -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  --font-family-english-primary: 'Pretendard', -apple-system, BlinkMacSystemFont,
-    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  --font-family-english-variable: 'Pretendard Variable', -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --font-family-korean-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --font-family-korean-variable: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --font-family-english-primary: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  --font-family-english-variable: 'Pretendard Variable', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 
   /* 폰트 웨이트 */
   --font-weight-light: 300;
@@ -58,137 +48,93 @@
 
   /* Typography 스타일 조합 - 데스크톱 */
   /* Display */
-  --typography-display-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
-  --typography-display-desktop-english: var(--font-family-english-primary)
-    var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
+  --typography-display-desktop-korean: var(--font-family-korean-primary) var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
+  --typography-display-desktop-english: var(--font-family-english-primary) var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
 
   /* Heading 1 */
-  --typography-heading1-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
-  --typography-heading1-desktop-english: var(--font-family-english-primary)
-    var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
+  --typography-heading1-desktop-korean: var(--font-family-korean-primary) var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
+  --typography-heading1-desktop-english: var(--font-family-english-primary) var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
 
   /* Heading 2 */
-  --typography-heading2-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
-  --typography-heading2-desktop-english: var(--font-family-english-primary)
-    var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
+  --typography-heading2-desktop-korean: var(--font-family-korean-primary) var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
+  --typography-heading2-desktop-english: var(--font-family-english-primary) var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
 
   /* Heading 3 */
-  --typography-heading3-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
-  --typography-heading3-desktop-english: var(--font-family-english-primary)
-    var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
+  --typography-heading3-desktop-korean: var(--font-family-korean-primary) var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
+  --typography-heading3-desktop-english: var(--font-family-english-primary) var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
 
   /* Heading 4 */
-  --typography-heading4-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
-  --typography-heading4-desktop-english: var(--font-family-english-primary)
-    var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
+  --typography-heading4-desktop-korean: var(--font-family-korean-primary) var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
+  --typography-heading4-desktop-english: var(--font-family-english-primary) var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
 
   /* Heading 5 */
-  --typography-heading5-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
-  --typography-heading5-desktop-english: var(--font-family-english-primary)
-    var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
+  --typography-heading5-desktop-korean: var(--font-family-korean-primary) var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
+  --typography-heading5-desktop-english: var(--font-family-english-primary) var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
 
   /* Heading 6 */
-  --typography-heading6-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
-  --typography-heading6-desktop-english: var(--font-family-english-primary)
-    var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
+  --typography-heading6-desktop-korean: var(--font-family-korean-primary) var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
+  --typography-heading6-desktop-english: var(--font-family-english-primary) var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
 
   /* Body 1 */
-  --typography-body1-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
-  --typography-body1-desktop-english: var(--font-family-english-primary)
-    var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
+  --typography-body1-desktop-korean: var(--font-family-korean-primary) var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
+  --typography-body1-desktop-english: var(--font-family-english-primary) var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
 
   /* Body 2 */
-  --typography-body2-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
-  --typography-body2-desktop-english: var(--font-family-english-primary)
-    var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
+  --typography-body2-desktop-korean: var(--font-family-korean-primary) var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
+  --typography-body2-desktop-english: var(--font-family-english-primary) var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
 
   /* Caption */
-  --typography-caption-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
-  --typography-caption-desktop-english: var(--font-family-english-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
+  --typography-caption-desktop-korean: var(--font-family-korean-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
+  --typography-caption-desktop-english: var(--font-family-english-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
 
   /* Overline */
-  --typography-overline-desktop-korean: var(--font-family-korean-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
-  --typography-overline-desktop-english: var(--font-family-english-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
+  --typography-overline-desktop-korean: var(--font-family-korean-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
+  --typography-overline-desktop-english: var(--font-family-english-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
 
   /* Typography 스타일 조합 - 모바일 */
   /* Display */
-  --typography-display-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
-  --typography-display-mobile-english: var(--font-family-english-primary)
-    var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
+  --typography-display-mobile-korean: var(--font-family-korean-primary) var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
+  --typography-display-mobile-english: var(--font-family-english-primary) var(--font-size-4xl) / var(--line-height-5xl) var(--font-weight-bold);
 
   /* Heading 1 */
-  --typography-heading1-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
-  --typography-heading1-mobile-english: var(--font-family-english-primary)
-    var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
+  --typography-heading1-mobile-korean: var(--font-family-korean-primary) var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
+  --typography-heading1-mobile-english: var(--font-family-english-primary) var(--font-size-3xl) / var(--line-height-4xl) var(--font-weight-bold);
 
   /* Heading 2 */
-  --typography-heading2-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
-  --typography-heading2-mobile-english: var(--font-family-english-primary)
-    var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
+  --typography-heading2-mobile-korean: var(--font-family-korean-primary) var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
+  --typography-heading2-mobile-english: var(--font-family-english-primary) var(--font-size-2xl) / var(--line-height-3xl) var(--font-weight-semi-bold);
 
   /* Heading 3 */
-  --typography-heading3-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
-  --typography-heading3-mobile-english: var(--font-family-english-primary)
-    var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
+  --typography-heading3-mobile-korean: var(--font-family-korean-primary) var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
+  --typography-heading3-mobile-english: var(--font-family-english-primary) var(--font-size-xl) / var(--line-height-2xl) var(--font-weight-semi-bold);
 
   /* Heading 4 */
-  --typography-heading4-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
-  --typography-heading4-mobile-english: var(--font-family-english-primary)
-    var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
+  --typography-heading4-mobile-korean: var(--font-family-korean-primary) var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
+  --typography-heading4-mobile-english: var(--font-family-english-primary) var(--font-size-lg) / var(--line-height-xl) var(--font-weight-medium);
 
   /* Heading 5 */
-  --typography-heading5-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
-  --typography-heading5-mobile-english: var(--font-family-english-primary)
-    var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
+  --typography-heading5-mobile-korean: var(--font-family-korean-primary) var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
+  --typography-heading5-mobile-english: var(--font-family-english-primary) var(--font-size-md) / var(--line-height-lg) var(--font-weight-medium);
 
   /* Heading 6 */
-  --typography-heading6-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
-  --typography-heading6-mobile-english: var(--font-family-english-primary)
-    var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
+  --typography-heading6-mobile-korean: var(--font-family-korean-primary) var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
+  --typography-heading6-mobile-english: var(--font-family-english-primary) var(--font-size-sm) / var(--line-height-md) var(--font-weight-medium);
 
   /* Body 1 */
-  --typography-body1-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
-  --typography-body1-mobile-english: var(--font-family-english-primary)
-    var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
+  --typography-body1-mobile-korean: var(--font-family-korean-primary) var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
+  --typography-body1-mobile-english: var(--font-family-english-primary) var(--font-size-base) / var(--line-height-base) var(--font-weight-regular);
 
   /* Body 2 */
-  --typography-body2-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
-  --typography-body2-mobile-english: var(--font-family-english-primary)
-    var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
+  --typography-body2-mobile-korean: var(--font-family-korean-primary) var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
+  --typography-body2-mobile-english: var(--font-family-english-primary) var(--font-size-sm) / var(--line-height-sm) var(--font-weight-regular);
 
   /* Caption */
-  --typography-caption-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
-  --typography-caption-mobile-english: var(--font-family-english-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
+  --typography-caption-mobile-korean: var(--font-family-korean-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
+  --typography-caption-mobile-english: var(--font-family-english-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-regular);
 
   /* Overline */
-  --typography-overline-mobile-korean: var(--font-family-korean-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
-  --typography-overline-mobile-english: var(--font-family-english-primary)
-    var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
+  --typography-overline-mobile-korean: var(--font-family-korean-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
+  --typography-overline-mobile-english: var(--font-family-english-primary) var(--font-size-xs) / var(--line-height-xs) var(--font-weight-medium);
 
   /* 기본 Typography 스타일 (한글, 데스크톱) */
   --typography-display: var(--typography-display-desktop-korean);
