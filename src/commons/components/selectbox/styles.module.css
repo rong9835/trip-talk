@@ -1,0 +1,278 @@
+/* Selectbox Base Styles */
+.selectbox {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  font-family: 'Pretendard Variable', sans-serif;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid #c7c7c7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #919191;
+  letter-spacing: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: #919191;
+  transition: transform 0.2s ease;
+}
+
+.icon.rotated {
+  transform: rotate(180deg);
+}
+
+/* Filled State */
+.selectbox.filled .text {
+  color: #000000;
+  font-weight: 500;
+}
+
+.selectbox.filled .trigger {
+  border-color: #000000;
+}
+
+/* Selected State */
+.selectbox.selected .trigger {
+  border-color: #000000;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option:hover {
+  background-color: rgba(41, 116, 229, 0.05);
+}
+
+.option.selected {
+  background-color: rgba(41, 116, 229, 0.05);
+}
+
+.optionText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #5f5f5f;
+  letter-spacing: 0;
+}
+
+.option.selected .optionText {
+  color: #2974e5;
+  font-weight: 700;
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  color: #2974e5;
+}
+
+/* Variant Styles */
+.variant-primary .trigger {
+  border-color: #c7c7c7;
+}
+
+.variant-primary.filled .trigger {
+  border-color: #000000;
+}
+
+.variant-secondary .trigger {
+  border-color: #e0e0e0;
+  background-color: #f8f9fa;
+}
+
+.variant-secondary.filled .trigger {
+  border-color: #2974e5;
+  background-color: #ffffff;
+}
+
+.variant-tertiary .trigger {
+  border-color: transparent;
+  background-color: #f0f0f0;
+}
+
+.variant-tertiary.filled .trigger {
+  border-color: #2974e5;
+  background-color: #ffffff;
+}
+
+/* Size Styles */
+.size-small {
+  width: 100px;
+}
+
+.size-small .trigger {
+  height: 32px;
+  padding: 6px 10px;
+}
+
+.size-small .text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.size-small .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.size-small .option {
+  height: 32px;
+  padding: 6px 10px;
+}
+
+.size-small .optionText {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.size-medium {
+  width: 120px;
+}
+
+.size-large {
+  width: 160px;
+}
+
+.size-large .trigger {
+  height: 48px;
+  padding: 12px 16px;
+}
+
+.size-large .text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.size-large .icon {
+  width: 28px;
+  height: 28px;
+}
+
+.size-large .option {
+  height: 48px;
+  padding: 12px 16px;
+}
+
+.size-large .optionText {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Theme Styles */
+.theme-dark .trigger {
+  background-color: #1a1a1a;
+  border-color: #404040;
+}
+
+.theme-dark .text {
+  color: #b0b0b0;
+}
+
+.theme-dark.filled .text {
+  color: #ffffff;
+}
+
+.theme-dark .icon {
+  color: #b0b0b0;
+}
+
+.theme-dark .dropdown {
+  background-color: #1a1a1a;
+  border-color: #404040;
+}
+
+.theme-dark .optionText {
+  color: #b0b0b0;
+}
+
+.theme-dark .option:hover {
+  background-color: rgba(41, 116, 229, 0.1);
+}
+
+.theme-dark .option.selected {
+  background-color: rgba(41, 116, 229, 0.1);
+}
+
+.theme-dark .option.selected .optionText {
+  color: #2974e5;
+}
+
+/* Disabled State */
+.disabled .trigger {
+  background-color: #f5f5f5;
+  border-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.disabled .text {
+  color: #b0b0b0;
+}
+
+.disabled .icon {
+  color: #b0b0b0;
+}
+
+/* Animation */
+.dropdown {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+}
