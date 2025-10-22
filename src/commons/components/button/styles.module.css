@@ -1,0 +1,297 @@
+/* Button 기본 스타일 */
+.button {
+  /* 기본 레이아웃 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+
+  /* 폰트 스타일 */
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  /* 커서 및 사용자 선택 */
+  cursor: pointer;
+  user-select: none;
+
+  /* 전환 효과 */
+  transition: all 0.2s ease-in-out;
+
+  /* 기본 테두리 */
+  border: none;
+  outline: none;
+
+  /* 포커스 스타일 */
+  &:focus-visible {
+    outline: 2px solid #2974e5;
+    outline-offset: 2px;
+  }
+}
+
+/* ===== VARIANT 스타일 ===== */
+
+/* Primary 버튼 */
+.button--primary {
+  background-color: #2974e5;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.button--primary:hover:not(.button--disabled):not(.button--loading) {
+  background-color: #256ad0;
+}
+
+.button--primary:active:not(.button--disabled):not(.button--loading) {
+  background-color: #1d52a3;
+}
+
+/* Secondary 버튼 */
+.button--secondary {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.button--secondary:hover:not(.button--disabled):not(.button--loading) {
+  background-color: #333333;
+}
+
+.button--secondary:active:not(.button--disabled):not(.button--loading) {
+  background-color: #1c1c1c;
+}
+
+/* Tertiary 버튼 */
+.button--tertiary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.button--tertiary:hover:not(.button--disabled):not(.button--loading) {
+  background-color: #f2f2f2;
+}
+
+.button--tertiary:active:not(.button--disabled):not(.button--loading) {
+  background-color: #e4e4e4;
+}
+
+/* ===== SIZE 스타일 ===== */
+
+/* Small 버튼 - 피그마 정확한 사이즈 */
+.button--small {
+  height: 40px;
+  width: 119px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.button--small .leftIcon,
+.button--small .rightIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Medium 버튼 - 피그마 정확한 사이즈 */
+.button--medium {
+  height: 48px;
+  width: 136px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.button--medium .leftIcon,
+.button--medium .rightIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Large 버튼 */
+.button--large {
+  height: 56px;
+  padding: 0 24px;
+  font-size: 20px;
+  line-height: 28px;
+  min-width: 120px;
+}
+
+.button--large .leftIcon,
+.button--large .rightIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* ===== THEME 스타일 ===== */
+
+/* Light 테마 (기본) */
+.button--light {
+  /* 라이트 테마는 기본 스타일과 동일 */
+}
+
+/* Dark 테마 */
+.button--dark {
+  /* 다크 테마에서의 색상 조정 */
+}
+
+.button--dark.button--primary {
+  background-color: #2974e5;
+  color: #ffffff;
+}
+
+.button--dark.button--primary:hover:not(.button--disabled):not(
+    .button--loading
+  ) {
+  background-color: #5490ea;
+}
+
+.button--dark.button--secondary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.button--dark.button--secondary:hover:not(.button--disabled):not(
+    .button--loading
+  ) {
+  background-color: #f2f2f2;
+}
+
+.button--dark.button--tertiary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.button--dark.button--tertiary:hover:not(.button--disabled):not(
+    .button--loading
+  ) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== DISABLED 스타일 ===== */
+
+.button--disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.button--disabled.button--primary {
+  background-color: #c7c7c7;
+  color: #e4e4e4;
+}
+
+.button--disabled.button--secondary {
+  background-color: #c7c7c7;
+  color: #e4e4e4;
+}
+
+.button--disabled.button--tertiary {
+  background-color: #f2f2f2;
+  color: #c7c7c7;
+  border-color: #c7c7c7;
+}
+
+/* ===== LOADING 스타일 ===== */
+
+.button--loading {
+  cursor: not-allowed;
+}
+
+.button--loading .label {
+  opacity: 0.7;
+}
+
+/* ===== 아이콘 스타일 ===== */
+
+.leftIcon,
+.rightIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.leftIcon svg,
+.rightIcon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* ===== 로딩 스피너 ===== */
+
+.loadingSpinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== 라벨 스타일 ===== */
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== 반응형 스타일 (피그마 디자인 그대로) ===== */
+
+@media (max-width: 768px) {
+  .button--small {
+    height: 40px;
+    width: 119px;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .button--medium {
+    height: 48px;
+    width: 136px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .button--large {
+    height: 56px;
+    padding: 0 24px;
+    font-size: 20px;
+    line-height: 28px;
+    min-width: 120px;
+  }
+}
+
+/* ===== 접근성 개선 ===== */
+
+.button:focus-visible {
+  outline: 2px solid #2974e5;
+  outline-offset: 2px;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ===== 호버 효과 (피그마 디자인 그대로만) ===== */
+
+.button:hover:not(.button--disabled):not(.button--loading) {
+  /* 피그마 디자인에 따른 기본 호버 효과만 */
+}
