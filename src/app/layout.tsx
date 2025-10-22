@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ModalProvider } from '@/commons/providers/modal/modal.provider';
 import { ThemeProvider } from '@/commons/providers/next-themes/next-themes.provider';
+import { ReactQueryProvider } from '@/commons/providers/react-query/react-query.provider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,14 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <ModalProvider>{children}</ModalProvider>
-        </ThemeProvider>
+        <ReactQueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <ModalProvider>{children}</ModalProvider>
+          </ThemeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
