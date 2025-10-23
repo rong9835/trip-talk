@@ -1,0 +1,193 @@
+/* Pagination 기본 스타일 */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+}
+
+/* 네비게이션 버튼 */
+.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.navButton:hover:not(.disabled) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.navButton.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* 페이지 번호 컨테이너 */
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 페이지 버튼 */
+.pageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.pageButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pageButton.active {
+  background-color: #f2f2f2;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* 생략 표시 */
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777777;
+  font-weight: 400;
+}
+
+/* ===== SIZE 스타일 ===== */
+
+/* Small Pagination */
+.pagination--small .navButton {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination--small .pageButton {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Medium Pagination */
+.pagination--medium .navButton {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination--medium .pageButton {
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Large Pagination */
+.pagination--large .navButton {
+  width: 32px;
+  height: 32px;
+}
+
+.pagination--large .pageButton {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* ===== VARIANT 스타일 ===== */
+
+/* Primary Pagination */
+.pagination--primary .pageButton.active {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/* Secondary Pagination */
+.pagination--secondary .pageButton.active {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+/* Tertiary Pagination */
+.pagination--tertiary .pageButton.active {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+/* ===== THEME 스타일 ===== */
+
+/* Light Theme */
+.pagination--light {
+  /* Light theme styles are default */
+}
+
+/* Dark Theme */
+.pagination--dark {
+  background-color: transparent;
+}
+
+.pagination--dark .pageButton {
+  color: #a0a0a0;
+}
+
+.pagination--dark .pageButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pagination--dark .pageButton.active {
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.pagination--dark .navButton:hover:not(.disabled) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.pagination--dark .ellipsis {
+  color: #a0a0a0;
+}
+
+/* Focus styles for accessibility */
+.navButton:focus-visible,
+.pageButton:focus-visible {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+/* ===== 반응형 디자인 ===== */
+@media (max-width: 640px) {
+  .pagination {
+    gap: 4px;
+  }
+
+  .pageNumbers {
+    gap: 4px;
+  }
+
+  .pagination--medium .pageButton {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .pagination--large .pageButton {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}

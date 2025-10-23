@@ -157,17 +157,23 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     );
 
     // 이벤트 핸들러
-    const handleFocus = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleFocus = (
+      e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
       setIsFocused(true);
       props.onFocus?.(e as React.FocusEvent<HTMLInputElement>);
     };
 
-    const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleBlur = (
+      e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
       setIsFocused(false);
       props.onBlur?.(e as React.FocusEvent<HTMLInputElement>);
     };
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const handleChange = (
+      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
       setValue(e.target.value);
       props.onChange?.(e as React.ChangeEvent<HTMLInputElement>);
     };
@@ -257,4 +263,3 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 Input.displayName = 'Input';
 
 export default Input;
-
