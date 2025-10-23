@@ -48,18 +48,28 @@
   transform: rotate(180deg);
 }
 
-/* Filled State */
+/* Filled State - 값이 입력된 상태 */
 .selectbox.filled .text {
   color: #000000;
   font-weight: 500;
 }
 
+.selectbox.filled .icon {
+  color: #000000;
+}
+
+/* 피그마 디자인: filled=on, selected=off일 때는 회색 테두리 유지 */
 .selectbox.filled .trigger {
+  border-color: #c7c7c7;
+}
+
+/* Selected State - 드롭다운이 열린 상태 */
+.selectbox.selected .trigger {
   border-color: #000000;
 }
 
-/* Selected State */
-.selectbox.selected .trigger {
+/* 피그마 디자인: filled=on, selected=on일 때는 검은 테두리 */
+.selectbox.filled.selected .trigger {
   border-color: #000000;
 }
 
@@ -124,7 +134,13 @@
   border-color: #c7c7c7;
 }
 
+/* 피그마 디자인: variant-primary는 기본 스타일 사용 */
 .variant-primary.filled .trigger {
+  border-color: #c7c7c7;
+}
+
+.variant-primary.selected .trigger,
+.variant-primary.filled.selected .trigger {
   border-color: #000000;
 }
 
