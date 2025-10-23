@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  width: 1280px;
+  height: 80px;
+  background-color: #f5f5f5;
+}
+
+.banner {
+  display: flex;
+  width: 1920px;
+  height: 516px;
+  background-color: #e0e0e0;
+}
+
+.gap {
+  display: flex;
+  width: 1280px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.main {
+  display: flex;
+  width: 1280px;
+  min-height: auto;
+  flex: 1;
+}
