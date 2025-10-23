@@ -153,6 +153,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       {
         [styles['inputWrapper--focused']]: isFocused,
         [styles['inputWrapper--with-button']]: !!buttonText,
+        [styles['inputWrapper--multiline']]: multiline,
       }
     );
 
@@ -241,10 +242,24 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               {buttonText}
             </button>
           )}
+
+          {/* Textarea 내부 카운터 */}
+          {multiline && showCounter && (
+            <div
+              className={cn(
+                styles.counterInside,
+                styles[`counterInside--${size}`]
+              )}
+            >
+              {counterText}
+            </div>
+          )}
         </div>
 
-        {/* 글자 수 카운터 */}
-        {showCounter && <div className={styles.counter}>{counterText}</div>}
+        {/* Input용 외부 카운터 */}
+        {!multiline && showCounter && (
+          <div className={styles.counter}>{counterText}</div>
+        )}
 
         {/* 에러 메시지 */}
         {errorMessage && actualStatus === 'error' && (
