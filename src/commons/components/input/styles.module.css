@@ -469,7 +469,7 @@
 }
 
 .inputWrapper--secondary.inputWrapper--focused {
-  border-color: #777777;
+  border-color: #2974e5;
   background-color: #ffffff;
 }
 
@@ -488,7 +488,7 @@
 }
 
 .inputWrapper--tertiary.inputWrapper--focused {
-  border-color: #777777;
+  border-color: #2974e5;
   background-color: #ffffff;
 }
 
@@ -503,7 +503,7 @@
 }
 
 .inputWrapper--dark.inputWrapper--focused {
-  border-color: #5f5f5f;
+  border-color: #2974e5;
   background-color: #2a2a2a;
 }
 
@@ -630,4 +630,3 @@
     display: none;
   }
 }
-

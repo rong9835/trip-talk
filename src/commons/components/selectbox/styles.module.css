@@ -2,7 +2,7 @@
 .selectbox {
   position: relative;
   display: inline-block;
-  width: 120px;
+  min-width: 120px;
   font-family: 'Pretendard Variable', sans-serif;
 }
 
@@ -165,10 +165,6 @@
 }
 
 /* Size Styles */
-.size-small {
-  width: 100px;
-}
-
 .size-small .trigger {
   height: 32px;
   padding: 6px 10px;
@@ -195,11 +191,7 @@
 }
 
 .size-medium {
-  width: 120px;
-}
-
-.size-large {
-  width: 160px;
+  min-width: 120px;
 }
 
 .size-large .trigger {
