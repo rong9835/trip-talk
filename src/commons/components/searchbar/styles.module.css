@@ -1,0 +1,310 @@
+/* Searchbar Base Styles */
+.searchbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Pretendard Variable', -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', sans-serif;
+}
+
+/* Variant Styles */
+.searchbar--primary {
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+}
+
+.searchbar--secondary {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.searchbar--tertiary {
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+}
+
+/* Size Styles */
+.searchbar--small {
+  height: 40px;
+  padding: 0 12px;
+}
+
+.searchbar--medium {
+  height: 48px;
+  padding: 0 16px;
+}
+
+.searchbar--large {
+  height: 56px;
+  padding: 0 20px;
+}
+
+/* Theme Styles */
+.searchbar--light {
+  color: #000000;
+}
+
+.searchbar--dark {
+  color: #ffffff;
+}
+
+.searchbar--dark.searchbar--primary {
+  background-color: #2a2a2a;
+}
+
+.searchbar--dark.searchbar--secondary {
+  background-color: #1a1a1a;
+  border-color: #404040;
+}
+
+.searchbar--dark.searchbar--tertiary {
+  background-color: transparent;
+  border-color: #404040;
+}
+
+/* State Styles */
+.searchbar--focused {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+.searchbar--dark.searchbar--focused {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+.searchbar--typing {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+.searchbar--dark.searchbar--typing {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+.searchbar--filled {
+  background-color: #f2f2f2;
+}
+
+.searchbar--dark.searchbar--filled {
+  background-color: #2a2a2a;
+}
+
+.searchbar--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input Styles */
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  transition: all 0.2s ease-in-out;
+}
+
+.input--small {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.input--medium {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.input--large {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.input::placeholder {
+  color: #919191;
+  font-weight: 400;
+}
+
+.searchbar--dark .input::placeholder {
+  color: #666666;
+}
+
+.input--typing {
+  font-weight: 500;
+  color: #000000;
+}
+
+.searchbar--dark .input--typing {
+  color: #ffffff;
+}
+
+.input--filled {
+  font-weight: 500;
+  color: #000000;
+}
+
+.searchbar--dark .input--filled {
+  color: #ffffff;
+}
+
+.input--disabled {
+  cursor: not-allowed;
+}
+
+/* Search Icon Styles */
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: #919191;
+  transition: color 0.2s ease-in-out;
+}
+
+.searchbar--focused .searchIcon,
+.searchbar--typing .searchIcon {
+  color: #000000;
+}
+
+.searchbar--dark .searchIcon {
+  color: #666666;
+}
+
+.searchbar--dark.searchbar--focused .searchIcon,
+.searchbar--dark.searchbar--typing .searchIcon {
+  color: #ffffff;
+}
+
+/* Clear Button Styles */
+.clearButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #919191;
+  transition: color 0.2s ease-in-out;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.clearButton:hover {
+  color: #000000;
+  background-color: #f0f0f0;
+}
+
+.searchbar--dark .clearButton {
+  color: #666666;
+}
+
+.searchbar--dark .clearButton:hover {
+  color: #ffffff;
+  background-color: #404040;
+}
+
+.clearButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Cursor Styles */
+.cursor {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5px;
+  height: 16px;
+  background-color: #000000;
+  animation: blink 1s infinite;
+}
+
+.searchbar--dark .cursor {
+  background-color: #ffffff;
+}
+
+.searchbar--small .cursor {
+  height: 16px;
+}
+
+.searchbar--medium .cursor {
+  height: 20px;
+}
+
+.searchbar--large .cursor {
+  height: 24px;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .searchbar--large {
+    height: 48px;
+    padding: 0 16px;
+  }
+
+  .input--large {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Focus Styles for Accessibility */
+.searchbar:focus-within {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.searchbar--dark:focus-within {
+  outline-color: #66b3ff;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .searchbar--primary {
+    border: 2px solid #000000;
+  }
+
+  .searchbar--dark.searchbar--primary {
+    border: 2px solid #ffffff;
+  }
+
+  .searchbar--focused,
+  .searchbar--typing {
+    border-width: 3px;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .searchbar,
+  .input,
+  .searchIcon,
+  .clearButton,
+  .cursor {
+    transition: none;
+  }
+
+  .cursor {
+    animation: none;
+  }
+}
