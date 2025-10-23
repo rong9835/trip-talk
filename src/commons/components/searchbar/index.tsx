@@ -155,7 +155,6 @@ const Searchbar = forwardRef<HTMLInputElement, SearchbarProps>(
             </svg>
           </button>
         )}
-        {isFocused && <div className={styles.cursor} />}
       </div>
     );
   }

@@ -68,23 +68,23 @@
 
 /* State Styles */
 .searchbar--focused {
-  border-color: #000000;
-  box-shadow: 0 0 0 1px #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
 }
 
 .searchbar--dark.searchbar--focused {
-  border-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff;
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff;
 }
 
 .searchbar--typing {
-  border-color: #000000;
-  box-shadow: 0 0 0 1px #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
 }
 
 .searchbar--dark.searchbar--typing {
-  border-color: #ffffff;
-  box-shadow: 0 0 0 1px #ffffff;
+  background-color: #1a1a1a;
+  border: 1px solid #ffffff;
 }
 
 .searchbar--filled {
@@ -216,44 +216,6 @@
   opacity: 0.5;
 }
 
-/* Cursor Styles */
-.cursor {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0.5px;
-  height: 16px;
-  background-color: #000000;
-  animation: blink 1s infinite;
-}
-
-.searchbar--dark .cursor {
-  background-color: #ffffff;
-}
-
-.searchbar--small .cursor {
-  height: 16px;
-}
-
-.searchbar--medium .cursor {
-  height: 20px;
-}
-
-.searchbar--large .cursor {
-  height: 24px;
-}
-
-@keyframes blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-  51%,
-  100% {
-    opacity: 0;
-  }
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -270,12 +232,7 @@
 
 /* Focus Styles for Accessibility */
 .searchbar:focus-within {
-  outline: 2px solid #2974e5;
-  outline-offset: 2px;
-}
-
-.searchbar--dark:focus-within {
-  outline-color: #66b3ff;
+  outline: none;
 }
 
 /* High Contrast Mode Support */
@@ -299,12 +256,7 @@
   .searchbar,
   .input,
   .searchIcon,
-  .clearButton,
-  .cursor {
+  .clearButton {
     transition: none;
-  }
-
-  .cursor {
-    animation: none;
   }
 }
