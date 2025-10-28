@@ -1,10 +1,5 @@
-import Layout from '@/commons/layout';
 import Boards from '@/components/boards';
 
 export default function BoardsPage() {
-  return (
-    <Layout>
-      <Boards />
-    </Layout>
-  );
+  return <Boards />;
 }
