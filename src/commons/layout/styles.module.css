@@ -1,3 +1,4 @@
+/* Container */
 .container {
   display: flex;
   flex-direction: column;
@@ -6,20 +7,172 @@
   min-height: 100vh;
 }
 
+/* Header */
 .header {
   display: flex;
-  width: 1280px;
+  justify-content: center;
+  width: 100%;
   height: 80px;
-  background-color: #f5f5f5;
+  background-color: var(--color-gray-white);
 }
 
-.banner {
+.headerContent {
   display: flex;
-  width: 1920px;
-  height: 516px;
-  background-color: #e0e0e0;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 100%;
 }
 
+/* Left Area */
+.leftArea {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 40px;
+}
+
+.logoArea {
+  display: flex;
+  align-items: center;
+  width: 56px;
+  height: 32px;
+}
+
+.logo {
+  width: auto;
+  height: 32px;
+  object-fit: contain;
+}
+
+.tapArea {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+}
+
+.tapItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.tapItemActive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-gray-black);
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0;
+}
+
+.tapItem .tapTitle {
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xl);
+  color: var(--color-text-secondary);
+}
+
+.tapItemActive .tapTitle {
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xl);
+  color: var(--color-gray-black);
+}
+
+/* Right Area */
+.rightArea {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 40px;
+  background-color: var(--color-gray-black);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.buttonLabel {
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semi-bold);
+  line-height: var(--line-height-md);
+  color: var(--color-gray-white);
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 516px;
+  background: #d9d9d9;
+  overflow: hidden;
+}
+
+/* Swiper Container */
+.swiperContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+/* Swiper Pagination */
+.banner :global(.swiper-pagination) {
+  bottom: 28px;
+}
+
+.banner :global(.swiper-pagination-bullet) {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+  margin: 0 6px;
+}
+
+.banner :global(.swiper-pagination-bullet-active) {
+  background-color: var(--color-gray-white);
+  border-radius: 1000px;
+  width: 8px;
+}
+
+/* Gap */
 .gap {
   display: flex;
   width: 1280px;
@@ -27,6 +180,7 @@
   background-color: transparent;
 }
 
+/* Main */
 .main {
   display: flex;
   width: 1280px;
