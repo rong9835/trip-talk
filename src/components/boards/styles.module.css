@@ -1,0 +1,217 @@
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Header - 오늘 핫한 트립토크 영역 */
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 212px;
+  gap: 24px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  height: 36px;
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-5xl);
+  color: var(--color-gray-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Area */
+.cardArea {
+  display: flex;
+  gap: 32px;
+  width: 1280px;
+  height: 152px;
+}
+
+/* Talk Card */
+.talkCard {
+  display: flex;
+  gap: 8px;
+  width: 296px;
+  height: 152px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--color-gray-white);
+}
+
+.talkImage {
+  display: flex;
+  width: 112px;
+  height: 152px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.talkImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Talk Content */
+.talkContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 176px;
+  height: 152px;
+}
+
+/* Top Area */
+.topArea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 176px;
+  height: 80px;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: flex-start;
+  width: 176px;
+  height: 48px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-xl);
+  color: var(--color-gray-900);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 65px;
+  height: 24px;
+}
+
+.profileImage {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileName {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-700);
+}
+
+/* Bottom Area */
+.bottomArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 176px;
+  height: 24px;
+}
+
+/* Good Area */
+.goodArea {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+}
+
+.goodIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.goodIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.goodCount {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-sm);
+  color: var(--color-red-500);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-600);
+}
+
+/* Gap Areas */
+.gap1 {
+  width: 1280px;
+  height: 40px;
+}
+
+.search {
+  width: 1280px;
+  height: 108px;
+  background-color: var(--color-gray-50);
+}
+
+.gap2 {
+  width: 1280px;
+  height: 24px;
+}
+
+.main {
+  width: 1280px;
+  height: 696px;
+  background-color: var(--color-gray-100);
+}
+
+.gap3 {
+  width: 1280px;
+  height: 56px;
+}
