@@ -1,0 +1,207 @@
+/* 컨테이너 */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+/* 페이지 제목 */
+.pageTitle {
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-3xl);
+  color: var(--color-gray-black);
+  margin: 0;
+}
+
+/* 폼 컨테이너 */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 폼 콘텐츠 */
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* 한 줄에 2개 필드 (작성자, 비밀번호) */
+.rowFields {
+  display: flex;
+  gap: 40px;
+}
+
+.rowFields > * {
+  flex: 1;
+}
+
+/* 구분선 */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-gray-100);
+}
+
+/* 내용 필드 */
+.contentField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contentLabel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+}
+
+.labelText {
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+  color: var(--color-gray-black);
+}
+
+.required {
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-lg);
+  color: var(--color-error-main);
+}
+
+/* Textarea 컨테이너 */
+.textareaContainer {
+  height: 336px;
+}
+
+.textareaContainer > div {
+  height: 336px;
+}
+
+.textareaContainer textarea {
+  height: 336px;
+}
+
+/* 주소 필드 */
+.addressField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 우편번호 행 (인풋 + 버튼) */
+.zipCodeRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* 우편번호 입력창 */
+.zipCodeInput {
+  width: 82px;
+}
+
+.zipCodeInput input[type="text"] {
+  width: 82px;
+}
+
+/* 우편번호 검색 버튼 */
+.zipCodeButton {
+  width: 130px;
+  min-width: 130px;
+  height: 48px;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+/* 이미지 필드 */
+.imageField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.imageLabel {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 24px;
+}
+
+.imageUploadContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.imageUploadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  background-color: var(--color-gray-50);
+  border-radius: 8px;
+  cursor: pointer;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageUploadBox:hover {
+  background-color: var(--color-gray-100);
+}
+
+.addIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.uploadText {
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-lg);
+  color: var(--color-text-tertiary);
+}
+
+.fileInput {
+  display: none;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 버튼 컨테이너 */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.cancelButton {
+  min-width: 64px;
+  height: 48px;
+  padding: 0 16px;
+}
+
+.submitButton {
+  min-width: 95px;
+  height: 48px;
+  padding: 0 16px;
+}
