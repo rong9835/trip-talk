@@ -194,10 +194,210 @@
   height: 40px;
 }
 
-.search {
+/* Board Section */
+.boardSection {
+  display: flex;
+  flex-direction: column;
   width: 1280px;
-  height: 108px;
+  gap: 24px;
+}
+
+/* Board Title */
+.boardTitle {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  height: 36px;
+  font-family: var(--font-family-korean-primary);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-5xl);
+  color: var(--color-gray-black);
+  margin: 0;
+  padding: 0;
+}
+
+/* Search Area */
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  height: 48px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 48px;
+  gap: 8px;
+}
+
+.searchInputArea {
+  display: flex;
+  align-items: center;
+  width: 1110px;
+  height: 48px;
+  gap: 16px;
+}
+
+/* Datepicker */
+.datepicker {
+  display: flex;
+  align-items: center;
+  width: 289px;
+  height: 48px;
+  padding: 12px;
+  gap: 8px;
   background-color: var(--color-gray-50);
+  border-radius: 8px;
+}
+
+.dateIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.dateIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dateText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  gap: 4px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-lg);
+  color: var(--color-gray-600);
+}
+
+.dateRange {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dateValue {
+  text-align: center;
+}
+
+.dateDot {
+  text-align: center;
+}
+
+.dateSeparator {
+  text-align: center;
+  margin: 0 2px;
+}
+
+/* Search Bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 640px;
+  height: 48px;
+  padding: 12px;
+  gap: 8px;
+  background-color: var(--color-gray-50);
+  border-radius: 8px;
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.searchIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.searchInput {
+  flex: 1;
+  height: 24px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-lg);
+  color: var(--color-gray-900);
+}
+
+.searchInput::placeholder {
+  color: var(--color-gray-500);
+}
+
+/* Search Button */
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 48px;
+  background-color: var(--color-gray-black);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semi-bold);
+  line-height: var(--line-height-xl);
+  color: var(--color-gray-white);
+  transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+  background-color: var(--color-gray-800);
+}
+
+.searchButton:active {
+  background-color: var(--color-gray-900);
+}
+
+/* Register Button */
+.registerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+  height: 48px;
+  background-color: var(--color-blue-500);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semi-bold);
+  line-height: var(--line-height-xl);
+  color: var(--color-gray-white);
+  transition: background-color 0.2s ease;
+}
+
+.registerButton:hover {
+  background-color: var(--color-blue-400);
+}
+
+.registerButton:active {
+  background-color: var(--color-blue-600);
 }
 
 .gap2 {
@@ -206,9 +406,224 @@
 }
 
 .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1280px;
   height: 696px;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-gray-white);
+  border-radius: 16px;
+  padding: 24px 48px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+/* Board List Container */
+.boardListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1184px;
+  height: 648px;
+  gap: 8px;
+}
+
+/* Board Header */
+.boardHeader {
+  display: flex;
+  align-items: center;
+  width: 1184px;
+  height: 52px;
+  gap: 8px;
+}
+
+.headerNo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-900);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  width: 848px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-900);
+}
+
+.headerAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-900);
+}
+
+.headerDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-900);
+}
+
+/* Board List */
+.boardList {
+  display: flex;
+  flex-direction: column;
+  width: 1184px;
+  height: 548px;
+  gap: 12px;
+}
+
+/* Board Item */
+.boardItem {
+  display: flex;
+  align-items: center;
+  width: 1184px;
+  height: 44px;
+  padding: 12px 0;
+  gap: 8px;
+  background-color: var(--color-gray-white);
+  border: 1px solid var(--color-gray-50);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.boardItem:hover {
+  background-color: var(--color-gray-50);
+}
+
+.boardNo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-500);
+}
+
+.boardTitle {
+  display: flex;
+  align-items: center;
+  width: 848px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-900);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boardAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-800);
+}
+
+.boardDate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-sm);
+  color: var(--color-gray-500);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1184px;
+  height: 32px;
+  gap: 8px;
+}
+
+.paginationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.paginationIcon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 32px;
+}
+
+.pageNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-family: var(--font-family-korean-variable);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-lg);
+  color: var(--color-gray-600);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pageNumber:hover {
+  background-color: var(--color-gray-50);
+}
+
+.pageActive {
+  background-color: var(--color-gray-50);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-black);
 }
 
 .gap3 {
